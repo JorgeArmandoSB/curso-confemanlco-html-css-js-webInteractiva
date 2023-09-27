@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empanadas JS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container text-bg-light">
+        <header class="row bg-warning bg-gradient row-full">
+            <h1 class="text-center text-black">Empanadas JS</h1>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Empanada</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link" href="/curso/01_seleccion_elementos/elemento.html">Selec elemen</a>
+                      <a class="nav-link" href="/curso/02_creacion_elementos/creacion_elementos.html">Creación elemen</a>
+                      <a class="nav-link" href="/curso/03_gestion_atributos/gestion_atributos.html">Gestión elemen</a>
+                      <a class="nav-link" href="/curso/04_manipulacion_elementos/manipulacion.html">Manipu elemen</a>
+                      <a class="nav-link" href="/curso/05_input_atributos/input.html">Inputs</a>
+                      <!-- <a class="nav-link" href="#">Nuestro equipo</a>
+                      <a class="nav-link disabled" aria-disabled="true">Contactenos</a> -->
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="row">
+            <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner ">
+                  <div class="carousel-item active ">
+                    <img  src="https://static.wixstatic.com/media/3106db_4f486f8b638a42f29fe6b633d5fee9e9~mv2.jpg/v1/crop/x_103,y_73,w_964,h_637/fill/w_540,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/empanadas_valle.jpg" class="d-block w-100" alt="empanadas vallunas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.emiliodeik.cl/wp-content/uploads/2011/01/masa-empanadas-para-horno.jpg" class="d-block w-100" alt="empanadas al horno">
+                  </div>
+                  <div class="carousel-item">
+                    <img  src="https://www.pasteleite.com/wp-content/uploads/2020/05/empanadas-de-harina.jpg" class="d-block w-100" alt="empanadas de trigo">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+        </section>
+
+        <div class="row mt-2 row-h"></div>
+        <div class="row text-center text-secondary pt-4">
+            <h2 class="productos">Productos <i class="fa-solid fa-chevron-down"></i></h2>
+        </div>
+        <div class="row mt-2 row-h"></div>
+
+        <section id="showProducts" class="row p-4 d-none">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Empanadas Vallunas
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Empanadas horneadas
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Empanadas de trigo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <div class="row mt-2 row-h"></div>
+        <div class="row text-center text-secondary pt-4">
+            <h2>Haz tu pedido en línea</h2>
+        </div>
+        <div class="row mt-2 row-h"></div>
+
+        <section class="row mt-4">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li id="seleccion-1" class="list-group-item" aria-current="true">
+                      <i id="count-empanada" class="fa-solid fa-plus"></i>
+                        Empanadas especiales
+                        <span id="contadores" class="badge bg-primary rounded-pill">20</span>
+                        <span id="contadores" class="badge bg-danger rounded-pill"><i class="fa-solid fa-trash"></i></span>
+                    </li>
+                    <li id="seleccion-2" class="list-group-item">
+                      <i id="count-empanada" class="fa-solid fa-plus"></i>
+                        Empanadas racheras
+                        <span id="contadores" class="badge bg-primary rounded-pill">20</span>
+                        <span id="contadores" class="badge bg-danger rounded-pill"><i class="fa-solid fa-trash"></i></span>
+                    </li>
+                    <li id="seleccion-3" class="list-group-item">
+                      <i id="count-empanada" class="fa-solid fa-plus"></i>
+                        Empanadas pollo y champiñon
+                        <span id="contadores" class="badge bg-primary rounded-pill">20</span>
+                        <span id="contadores" class="badge bg-danger rounded-pill"><i class="fa-solid fa-trash"></i></span>
+                    </li>
+                    <li id="seleccion-4" class="list-group-item">
+                      <i id="count-empanada" class="fa-solid fa-plus"></i>
+                        Empanadas Hawaianas
+                        <span id="contadores" class="badge bg-primary rounded-pill">20</span>
+                        <span id="contadores" class="badge bg-danger rounded-pill"><i class="fa-solid fa-trash"></i></span>
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="seccion-ventas" class="col-md-6 d-none">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Cuantas <span id="showEmpanadas"></span> deseas comprar</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Indica la cantidad">
+                    <button type="button" class="btn btn-success mt-2">Comprar</button>
+                  </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>
